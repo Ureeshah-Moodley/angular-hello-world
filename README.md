@@ -59,8 +59,8 @@ Get all products url : https://dummyjson.com/products
 
 ## Basic PSG CI
 
-  --color-primary-color: #3f4765;
-  --swimlane-249-249-249: #f9f9f9;
+  --color-primary-color: #3f4765
+  --swimlane-249-249-249: #f9f9f9
 
   // ======================= COLOUR VARIABLES =======================
   // cyan
