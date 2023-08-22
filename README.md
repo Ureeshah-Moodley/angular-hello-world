@@ -74,7 +74,7 @@ Get all products url : https://dummyjson.com/products
   - psg-dark-blue-light: rgba(178, 198, 215, 1);
   - psg-dark-blue-light2: rgba(229, 236, 242, 1);
 
-  4. psg info purple
+  3. psg info purple
   - psg-purple-info: rgba(117, 59, 134, 1);
   - psg-purple-info-accesible: rgba(188, 147, 194, 1);P
   - psg-purple-info-light: rgba(216, 191, 218, 1);
