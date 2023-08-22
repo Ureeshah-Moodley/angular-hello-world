@@ -27,6 +27,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Criteria 
+Clone this project and create a branch <your_name>_main which you will treat as your own main branch. 
+Please do not commit to the actual main branch so in future other devs can clone and practice with this project.
 
 Angular Material has already been installed and you are encouraged to use their components.
 
