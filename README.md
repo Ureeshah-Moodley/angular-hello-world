@@ -53,8 +53,8 @@ Get all products url : https://dummyjson.com/products
     and display the appropriate data.
 
 3. Paginate the table to show ten rows at a time.
-4. Add a filter to filter the rows by the title
-5. Add a sort header to the Price and Rating columns
+4. Add a filter to filter the rows by the title.
+5. Add a sort header to the Price and Rating columns/
 
 
 ## Basic PSG CI
