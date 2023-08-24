@@ -1,0 +1,62 @@
+:root{
+    --color-primary-color: #3f4765
+    --swimlane-249-249-249: #f9f9f9
+
+    // ======================= COLOUR VARIABLES =======================
+    // cyan
+    --psg-cyan-primary: rgba(0, 175, 239, 1);
+    --psg-cyan-primary-accessible-text: rgba(0, 158, 238, 1);
+    --psg-cyan-primary-light: rgba(102, 204, 255, 0.8);
+    --psg-cyan-primary-light2: rgba(225, 243, 252, 1);
+
+    // dark blue text
+    --psg-dark-blue-label-text: rgba(63, 71, 101, 1);
+
+    // psg dark blue
+    --psg-dark-blue: rgba(53, 85, 131, 1);
+    --psg-dark-blue-accessible: rgba(99, 136, 180, 1);
+    --psg-dark-blue-light: rgba(178, 198, 215, 1);
+    --psg-dark-blue-light2: rgba(229, 236, 242, 1);
+
+    // psg info purple
+    --psg-purple-info: rgba(117, 59, 134, 1);
+    --psg-purple-info-accesible: rgba(188, 147, 194, 1);
+    --psg-purple-info-light: rgba(216, 191, 218, 1);
+    --psg-purple-info-light2: rgba(242, 233, 242, 1);
+    --psg-purple-info-background: rgba(248, 245, 249, 1);
+
+    // psg warn red
+    --psg-warn: rgba(208, 52, 56, 1);
+    --psg-warn-accessible: rgba(232, 145, 144, 1);
+    --psg-warn-light: rgba(241, 189, 188, 1);
+    --psg-warn-light2: rgba(250, 233, 233, 1);
+
+    // psg cautious orange
+    --psg-cautious: rgb(255, 165, 0, 1);
+    --psg-cautious-accessible: rgba(255, 231, 131, 1);
+    --psg-cautious-light: rgba(254, 240, 181, 1);
+    --psg-cautious-light2: rgba(253, 249, 229, 1);
+    --psg-cautious-snackbar: rgba(255, 231, 131, 1);
+
+    // psg success green
+    --psg-success: rgba(0, 170, 111, 1);
+    --psg-success-accessible: rgba(141, 214, 179, 1);
+    --psg-success-light: rgba(189, 231, 210, 1);
+    --psg-success-light2: rgba(234, 246, 239, 1);
+
+    // psg greys
+    --psg-hint-grey: rgba(112, 112, 112, 1);
+    --psg-text-grey: rgba(127, 127, 127, 1);
+    --psg-background-grey: rgba(242, 242, 242, 1);
+
+    // product badges colors
+    --psg-accessible-eqt-shade: rgba(219, 236, 248, 1);
+    --psg-gold-shade: rgba(230, 226, 211, 1);
+    --psg-gold-text: rgba(158, 145, 111, 1);
+
+    // ======================= STYLE VARIABLES =======================
+    --psg-border-radius: 4px;
+    --psg-border-radius-all: 0px 8px 8px 0px;
+    --psg-border-width: 2px;
+    --psg-button-height: 40px;
+}
