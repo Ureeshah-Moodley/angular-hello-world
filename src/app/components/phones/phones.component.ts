@@ -18,6 +18,7 @@ export class PhonesComponent implements OnInit {
   constructor(private phoneService: PhonesService) { }
 
   ngOnInit(): void {
+    
   }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -25,9 +26,18 @@ export class PhonesComponent implements OnInit {
     this.phoneData$ = this.phoneService.getData().pipe(
       tap( n => {
         this.dataSource = new MatTableDataSource<Product>(n.products)
+        this.dataSource.filterPredicate = function(data, filter: string): boolean {
+          return data.title.toLowerCase().includes(filter) ;
+        };
         this.dataSource.paginator = this.paginator; 
       })
     ); 
+  }
+
+  applyFilter(filterValue: string) {
+    filterValue = filterValue.trim(); // Remove whitespace
+    filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
+    this.dataSource.filter = filterValue;
   }
 
 }
