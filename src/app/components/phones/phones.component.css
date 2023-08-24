@@ -11,7 +11,7 @@ table.mat-table {
     border: 3px solid rgba(53, 85, 131, 1);
   }
 
-  th.mat-header-cell{
+  th.mat-header-cell, th.mat-sort-header{
     background: rgba(99, 136, 180, 1);
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 1px black;
@@ -24,6 +24,7 @@ td.mat-cell{
     padding: 15px;
     text-align: center;
 }
+
 
 tr:hover {background-color: rgba(102, 204, 255, 0.8);}
 
