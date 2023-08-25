@@ -11,6 +11,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSortModule } from '@angular/material/sort';
+import { FormsModule } from '@angular/forms'  
+import { ReactiveFormsModule} from '@angular/forms' 
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSortModule
+    MatSortModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

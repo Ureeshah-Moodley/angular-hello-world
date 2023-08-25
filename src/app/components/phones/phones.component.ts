@@ -6,6 +6,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { tap } from 'rxjs/operators';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-phones',
@@ -16,9 +17,13 @@ export class PhonesComponent implements AfterViewInit { // Differenece with OnIn
   phoneData$: Observable<PhonesResponse>;
   dataSource: MatTableDataSource<Product>;
   displayedColumns: string[] = ['Title', 'Description', 'Price (R)', 'Discount Percentage', 'Rating', 'Brand', 'Thumbnail'];
-  constructor(private phoneService: PhonesService) { }
+  constructor(private phoneService: PhonesService, public fg: FormBuilder) { }
 
+  declare filterForm: FormGroup;
   ngOnInit(): void {
+    this.filterForm = this.fg.group({
+      filter : [""]
+    })
   }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -39,8 +44,8 @@ export class PhonesComponent implements AfterViewInit { // Differenece with OnIn
   }
 
   applyFilter(filterValue: string) {
-    filterValue = filterValue.trim(); 
-    filterValue = filterValue.toLowerCase(); 
+    filterValue = filterValue.trim().toLowerCase(); 
+    // filterValue = filterValue.toLowerCase(); 
     this.dataSource.filter = filterValue;
   }
 
