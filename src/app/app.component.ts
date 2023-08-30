@@ -26,3 +26,18 @@ export class CurrencyFormat {
       return currencySign +(decimalDelimiter ? num.replace('.', decimalDelimiter) : num).replace(new RegExp(result, 'g'), '$&' + chunkDelimiter);
   }
 }
+@Pipe({
+  name: 'percentageFormat'
+})
+export class PercentageFormat {
+  transform(value: number,
+      percentageSign: string = '%',
+      decimalLength: number = 2, 
+      decimalDelimiter:string = ','): string {
+
+      let result = '\\' + (decimalLength > 0 ? '\\D' : '$') ;
+      let num = value.toFixed(Math.max(0, ~~decimalLength));
+
+      return (decimalDelimiter ? num.replace('.', decimalDelimiter) : num) + percentageSign;
+  }
+}
