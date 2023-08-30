@@ -16,7 +16,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class PhonesComponent implements AfterViewInit { // Differenece with OnInit?
   phoneData$: Observable<PhonesResponse>;
   dataSource: MatTableDataSource<Product>;
-  displayedColumns: string[] = ['Title', 'Description', 'Price (R)', 'Discount Percentage', 'Rating', 'Brand', 'Thumbnail'];
+  displayedColumns: string[] = ['Title', 'Description', 'price', 'Discount Percentage', 'rating', 'Brand', 'Thumbnail'];
   constructor(private phoneService: PhonesService, public fg: FormBuilder) { }
 
   declare filterForm: FormGroup;
@@ -27,7 +27,13 @@ export class PhonesComponent implements AfterViewInit { // Differenece with OnIn
   }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatSort) set matSort(sort: MatSort) {
+    if (!sort) { return; }
+    if (!this.dataSource.sort) {
+        this.dataSource.sort = sort;
+    }
+    
+}
 
   ngAfterViewInit() {
     this.phoneData$ = this.phoneService.getData().pipe(
@@ -36,9 +42,7 @@ export class PhonesComponent implements AfterViewInit { // Differenece with OnIn
         this.dataSource.filterPredicate = function(data, filter: string): boolean {
           return data.title.toLowerCase().includes(filter) ;
         };
-        this.dataSource.sort = this.sort;
-        this.dataSource.paginator = this.paginator; 
-        
+        this.dataSource.paginator = this.paginator;        
       })
     ); 
   }

@@ -16,13 +16,13 @@ table.mat-table {
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 1px black;
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 td.mat-cell{
     height: 200px;
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 

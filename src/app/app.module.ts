@@ -13,14 +13,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSortModule } from '@angular/material/sort';
 import { FormsModule } from '@angular/forms'  
 import { ReactiveFormsModule} from '@angular/forms' 
+import { CurrencyFormat } from './app.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhonesComponent
+    PhonesComponent,
+    CurrencyFormat
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
