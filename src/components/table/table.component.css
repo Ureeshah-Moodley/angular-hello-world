@@ -1,0 +1,45 @@
+.mytable{
+    width: 100%;
+    border: 1px solid currentColor
+}
+.mat-column-Title{
+    text-align: Left;
+    border-right: 1px solid currentColor;
+}
+.mat-column-Description{
+    padding-left: 5px;
+    padding-right: 16px;
+    width: 30%; 
+    border-right: 1px solid currentColor;
+}
+.mat-column-Price{
+    padding-left: 5px;
+    width: 5%;
+    text-align: left;
+    border-right: 1px solid currentColor;
+}
+.mat-column-DiscountPercentage{
+    padding-left: 5px;
+    text-align: left;
+    border-right: 1px solid currentColor;
+}
+.mat-column-Rating{
+    padding-left: 5px;
+    text-align: left;
+    border-right: 1px solid currentColor;
+}
+.mat-column-Brand{
+    padding-left: 5px;
+    text-align: left;
+    border-right: 1px solid currentColor;
+}
+.mat-column-Thumbnail{
+    padding-left: 5px;
+    text-align: left;
+    border-right: 1px solid currentColor;
+    height: 30px;
+}
+.images{
+    height: inherit;
+    width: inherit;
+}
